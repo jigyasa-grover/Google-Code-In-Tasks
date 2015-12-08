@@ -4,4 +4,4 @@
 
 This is a repository for GCI tasks and putting up examples for reference.
 
-- [Lights Out] (https://github.com/jig08/Google-Code-In-Tasks/tree/master/LightsOut)
+- [ [sample]Lights Out] (https://github.com/jig08/Google-Code-In-Tasks/tree/master/LightsOut)
