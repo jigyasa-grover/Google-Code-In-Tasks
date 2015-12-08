@@ -1,4 +1,4 @@
-#Lights Out !
+#[sample] Lights Out !
 
 - Make a scene of simple room/wall having a light bulb and a switch.
 - Make the switch control the light bulb. On one click it switches it on and on the other switches it off.
