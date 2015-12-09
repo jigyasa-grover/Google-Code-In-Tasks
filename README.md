@@ -4,4 +4,5 @@
 
 This is a repository for GCI tasks and putting up examples for reference.
 
-- [ [sample]Lights Out] (https://github.com/jig08/Google-Code-In-Tasks/tree/master/LightsOut)
+- [ [sample] Lights Out] (https://github.com/jig08/Google-Code-In-Tasks/tree/master/LightsOut)
+- [Movie Tweets Retrieval](https://github.com/jig08/Google-Code-In-Tasks/edit/master/MovieTweetsRetrieval)
