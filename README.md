@@ -9,3 +9,4 @@ This is a repository for GCI tasks and putting up examples for reference.
 - Task Details for [`Movie Tweets Retrieval`](https://github.com/jig08/Google-Code-In-Tasks/edit/master/MovieTweetsRetrieval)
 - Completed Task: [`Movie Tweets Retrieval` by Anshuman](https://github.com/jig08/Google-Code-In-Tasks/tree/master/MovieTweetsRetrieval_Anshuman)
 - Completed Task: [`Movie Tweets Retrieval` by Mario Scappini](https://github.com/jig08/Google-Code-In-Tasks/tree/master/MovieTweetsRetrieval_%5Bmarioscappini%5D)
+- Completed Task: [`FOSS Quiz in Java` by Vineet Shah](https://github.com/jig08/Google-Code-In-Tasks/tree/master/FOSSQuiz_%5BVineet_Shah%5D)
