@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<center>
+<h1>Welcome to JavaScript !</h1>
+
+<img id="bulb" src="bulb_offf.jpg" width="100" height="180">
+<br>
+<img id="switch" onclick="changeImage()" src="switch_off.jpg" width="200" height="180">
+
+<p>Click the switch to turn on/off the bulb.</p>
+
+</center>
+
+<script>
+function changeImage() 
+{
+    var imageBulb = document.getElementById('bulb');
+    var imageSwitch = document.getElementById('switch');
+
+
+    if (imageBulb.src.match("bulb_onn")) 
+    {
+        imageBulb.src = "bulb_offf.jpg";
+        imageSwitch.src = "switch_off.jpg";
+    } 
+
+    else 
+    {
+        imageBulb.src = "bulb_onn.jpg";
+        imageSwitch.src = "switch_on.jpg";
+    }
+}
+</script>
+
+</body>
+</html>
