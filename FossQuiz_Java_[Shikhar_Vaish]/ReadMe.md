@@ -13,7 +13,7 @@ Question Screen:
 ![alt tag](https://github.com/svr8/Google-Code-In-Tasks/blob/master/FossQuiz_Java_%5BShikhar_Vaish%5D/Screenshots/questionScreen.png)
 
 ScoreCard Screen:
-![alt tag]https://github.com/svr8/Google-Code-In-Tasks/blob/master/FossQuiz_Java_%5BShikhar_Vaish%5D/Screenshots/resultScreen.png)
+![alt tag](https://github.com/svr8/Google-Code-In-Tasks/blob/master/FossQuiz_Java_%5BShikhar_Vaish%5D/Screenshots/resultScreen.png)
 
 #Installation
 
