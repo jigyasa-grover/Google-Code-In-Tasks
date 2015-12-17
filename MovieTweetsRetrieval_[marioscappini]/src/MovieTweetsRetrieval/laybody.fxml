@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="234.0" prefWidth="461.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="twittermov2.TwitterMov2">
+   <children>
+      <TextArea fx:id="out" layoutX="22.0" layoutY="75.0" prefHeight="152.0" prefWidth="417.0" />
+      <Button layoutX="193.0" layoutY="41.0" mnemonicParsing="false" onAction="#onSubmit" text="Get Tweets" />
+      <Label fx:id="title" layoutX="172.0" layoutY="24.0" text="Tweets of 007 Spectre" />
+   </children>
+</Pane>
