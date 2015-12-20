@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function addBulb () {
+				document.body.appendChild(document.importNode(document.querySelector("#light").content, true));
+			}
+		</script>
+		<style>
+			body {margin: 0px; font-size: 11pt; text-align: center;}
+			span {color: white; text-align: center; width: 30px; height: 25px; position: absolute; z-index: 1; font-family: "Comic Sans MS", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+		</style>
+	</head>
+	<body>
+		<input type="button" id="addBulb" value="Add a Lightbulb!" onclick="addBulb()" /><br>
+		
+		<!--Lightbulb Template-->
+		<template id="light">
+			<div style="display: inline-block; height: 135px; margin: 40px; user-select: none;">
+				<div class="bulbBackground" style="height: 200px; width: 100px;">
+					<img class="bulb" style="height: 200px; width: 100px;" 	src="https://lh3.googleusercontent.com/HJH0KMkAjE1w9qbjXP3Yi_gnGv6oxmmTH47C4C_QCkrTP0d8Z6MdO8PMXbfdr7iZelpzJ_oj-23Lt5Pxji4gBskdlsNF348dG6Mxyn56kLHpPxfNGsYXUBuZk1x5B6OQcZTseqrymZQmWkKwCW5uz5CcRqQBCln017YTeCrgxIXvIuA99XOck_bZ24JqdPH70WBSMKTtri_rKz4tfoUrOik_3jmXjbivUufyGoGz4JFedai43VxW06OHflnT79dtiGUdGUJMoWWSQfhZ8aujIimNWIuGlEPZsQZ6FUHdFRjrt5Ego1IOkyAn4ebUeNzUxzceHkoUbxdQljSxmdUsGbvKnGQXYUOgt9JKConUMB9zs41wriLvwb4HiRe28GkxLBS2E30C0kFYODjr4ozsjl-m9e-KEQKSDlPp2xQCsgy9I3e4XIqwbQmCGcAydPUyg8XGMDhv9aqvFSNB45bzJkTm3yRUiB3E2KWs5msOxrsIR3YbjlKJ_qqgp7_wdEwHSXTyfKyoW0-JwHRFSMTQKrGS7VwXWJaSKcja0fR3lAw=w128-h256-no" />
+				</div>
+				<div class="switchBg" style="margin-top: 10px; height: 25px; width: 125; background-color: red; z-index: 0; position: relative; border: 2px solid purple; margin:0px;">
+					<span style="left: 0px;">ON</span>
+					<span style="right: 0px">OFF</span>
+					<label class="switch" style="position: absolute; background-color: purple; height: 25px; width: 30px; display: block; cursor: pointer; z-index: 2; color: white; font-size: 12pt;">&hArr;
+						<input type="checkbox" style="display: none" class="invisSwitch" onclick="switchLight(this)"/>
+					</label>
+				</div>
+				
+				<script>
+					function switchLight (obj) {
+						if(obj.bg == undefined) {
+							var siblings = obj.parentElement.parentElement.parentElement.children;
+							for(var i = 0; i < siblings.length; i++) {
+								var thisObj = siblings[i];
+								if(thisObj.className == "bulbBackground") {
+									obj.bg = thisObj;
+								}
+								else if(thisObj.className == "switchBg") {
+									obj.switchbg = thisObj;
+								}
+							}
+						}
+						if(obj.checked) {
+							obj.bg.style.backgroundColor = "yellow";
+							obj.switchbg.style.backgroundColor = "green";
+							obj.parentElement.style.left = "67px";
+						}
+						else if(!obj.checked) {
+							obj.bg.style.backgroundColor = "white";
+							obj.switchbg.style.backgroundColor = "red";
+							obj.parentElement.style.left = "0px";
+						}
+					}
+				</script>
+			</div>
+		</template>
+	</body>
+</html>
