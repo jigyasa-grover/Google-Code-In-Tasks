@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<!--
+	Identity by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Lightbulb for GCI2015</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+</head>
+
+<body class="is-loading">
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <a href="https://github.com/hkminegod/GCI2015"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/567c3a48d796e2fc06ea80409cc9dd82bf714434/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png"></a>
+        <!-- Main -->
+        <section id="main">
+            <header>
+                <span><img id="lightbulb" src="images/on.jpg"></span>
+                <h2>Lightbulb Status:</h2>
+                <p id="text">On</p>
+            </header>
+            <ul class="actions">
+                <button id="switch" onclick="lightSwitch();" class="button">Turn Off</button>
+                <button id="switch" onclick="craziSwitch();" class="button" disabled>CRAZI</button>
+            </ul>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="copyright">
+                <li><a href="https://pages.choy.in">pages.choy.in</a> - Open Source 5ever.</li>
+                <li>Design: Identity - HTML5 UP</li>
+            </ul>
+        </footer>
+
+    </div>
+    <!-- Scripts -->
+    <script>
+        var theBulb = document.getElementById("lightbulb");
+        var theSwitch = document.getElementById("switch");
+        var theText = document.getElementById("text");
+
+        function lightSwitch() {
+            if (theSwitch.innerHTML == "Turn Off") {
+                theBulb.src = "images/off.jpg";
+                theText.innerHTML = "Off";
+                theSwitch.innerHTML = "Turn On";
+            } else {
+                theBulb.src = "images/on.jpg";
+                theText.innerHTML = "On";
+                theSwitch.innerHTML = "Turn Off";
+            }
+        }
+
+        function craziSwitch() {
+            //to be implemented ;)
+        }
+    </script>
+
+    <script>
+        if ('addEventListener' in window) {
+            window.addEventListener('load', function () {
+                document.body.className = document.body.className.replace(/\bis-loading\b/, '');
+            });
+            document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+        }
+    </script>
+</body>
+
+</html>
